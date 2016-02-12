@@ -18,9 +18,8 @@ h1, h2 {
   font-size: 30px;
 }
 
-.google-map {
-  width: 765px;
-  height: 562px;
+h1 {
+  margin-bottom: 30px;
 }
 
 .clearfix::after {
@@ -115,3 +114,64 @@ h1, h2 {
   width: 180px;
   min-height: 90px;
 }
+
+/* catalog */
+.breadcrumbs {
+  margin-bottom: 60px;
+}
+
+.filter {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  min-height: 570px;
+}
+
+.filter-group {
+  margin-bottom: 55px;
+}
+
+legend {
+  margin-bottom: 35px;
+  display: block;
+}
+
+fieldset{
+  border: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.catalog {
+  float: right;
+  width: 700px;
+  min-height: 570px;
+}
+
+.catalog-item {
+  float: left;
+  width: 220px;
+  min-height: 285px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog ul {
+  clear: both;
+  margin-top: 45px;
+}
+
+/* google-map */
+.google-map {
+  width: 765px;
+  height: 562px;
+}
+
+
