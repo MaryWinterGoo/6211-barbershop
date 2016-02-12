@@ -1,3 +1,10 @@
+html,
+body {
+  min-width: 1122px;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 14px;
   line-height: 24px;
@@ -16,21 +23,8 @@ h1, h2 {
   height: 562px;
 }
 
-// body {
-//   background: #000000 url("../img/bg-barbershop-index.jpg") no-repeat 50% 3px;
-//   background-size: 1122px auto;
-// }
-
-html,
-body {
-  min-width: 1122px;
-  margin: 0;
-  padding: 0;
-}
-
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;
 }
