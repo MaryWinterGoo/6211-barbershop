@@ -222,6 +222,35 @@ label {
   margin-bottom: 40px;
 }
 
+/* price */
+.content h2.title {
+  margin-bottom: 80px;
+}
+
+.content-column-left {
+  float: left;
+  width: 460px;
+  min-height: 210px;
+  margin-bottom: 70px;
+}
+
+.content-column-right {
+  float: right;
+  width: 460px;
+  min-height: 210px;
+  margin-bottom: 70px;
+}
+
+p.content-column-left, p.content-column-right {
+  margin-bottom: 0;
+  min-height: 85px;
+  margin-top: 0;
+}
+
+.content-title {
+  margin-bottom: 40px;
+}
+
 /* google-map */
 .google-map {
   width: 765px;
