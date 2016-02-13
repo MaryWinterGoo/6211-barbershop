@@ -168,6 +168,60 @@ label {
   margin-top: 45px;
 }
 
+/* catalog-item */
+.gallery {
+  float: left;
+  width: 460px;
+  min-height: 670px;
+}
+
+.gallery-img {
+  margin-bottom: 20px;
+}
+
+.gallery-img-preview {
+  float: left;
+  width: 140px;
+  margin-right: 20px;
+  height: 149px;
+}
+
+.gallery-img-preview:nth-child(3) {
+  float: right;
+  margin-right: 0;
+}
+
+.description {
+  float: right;
+  width: 390px;
+  min-height: 510px;
+  padding-top: 25px;
+}
+
+.description-main {
+  margin-bottom: 45px;
+}
+
+.description-main-availability {
+  float: left;
+}
+
+.description-main-article {
+  float: right;
+}
+
+.description p {
+  margin-bottom: 45px;
+}
+
+.price-block {
+  margin-bottom: 66px;
+}
+
+.description-structure {
+  margin-bottom: 40px;
+}
+
 /* google-map */
 .google-map {
   width: 765px;
