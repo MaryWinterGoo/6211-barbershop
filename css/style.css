@@ -448,23 +448,23 @@ label {
 }
 
 /* catalog-item */
-// .gallery {
-//   float: left;
-//   width: 460px;
-// }
+.gallery-item {
+  float: left;
+  width: 460px;
+}
 
-.gallery-img {
+.gallery-item-img {
   margin-bottom: 20px;
 }
 
-.gallery-img-preview {
+.gallery-item-img-preview {
   float: left;
   width: 140px;
   margin-right: 20px;
   height: 149px;
 }
 
-.gallery-img-preview:nth-child(3) {
+.gallery-item-img-preview:nth-child(3) {
   float: right;
   margin-right: 0;
 }
