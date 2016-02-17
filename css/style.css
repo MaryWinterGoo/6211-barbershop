@@ -9,7 +9,7 @@ body {
   background: url(../img/bg-barbershop-index.jpg) #000000 no-repeat center top;
 }
 
-h1, h2 {
+h1 {
   font-size: 30px;
 }
 
@@ -494,7 +494,7 @@ h1 {
   display: none;
 }
 
-/* catalog */
+/* catalog.html */
 .filter {
   float: left;
   width: 220px;
@@ -540,7 +540,7 @@ label {
   margin-top: 45px;
 }
 
-/* catalog-item */
+/* catalog-item.html */
 .gallery-item {
   float: left;
   width: 460px;
@@ -592,9 +592,69 @@ label {
   margin-bottom: 40px;
 }
 
-/* price */
-.content h2.title {
-  margin-bottom: 80px;
+/* price.html */
+.big-heading {
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.big-heading h2 {
+  position: relative;
+  z-index: 2;
+  display: inline;
+  margin: 0;
+  padding: 0 25px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: #f8f3f0 url("../img/bg.jpg") repeat;
+}
+
+.big-heading::after {
+  content: "";
+  position: relative;
+  top: -25px;
+  z-index: 1;
+  display: block;
+  border-bottom: 2px solid #000000;
+}
+
+.content-column-left h2, .content-column-right h2, .content-row h2 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.custom-list {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom-list li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.content table {
+  border-collapse: collapse;
+}
+
+.content td {
+  padding: 10px 15px;
+  border: 2px solid #000000;
 }
 
 .content-column-left {
@@ -609,13 +669,35 @@ label {
   margin-bottom: 70px;
 }
 
+.content-column-left *:first-child,
+.content-column-right *:first-child {
+  margin-top: 0;
+}
+
+.content-column-left *:last-child,
+.content-column-right *:last-child {
+  margin-bottom: 0;
+}
+
+.content-row {
+  clear: both;
+}
+
 p.content-column-left, p.content-column-right {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-.content-title {
-  margin-bottom: 40px;
+.prices-table {
+  width: 100%;
+}
+
+.prices-table td {
+  width: 50%;
+}
+
+.prices-table td:last-child {
+  text-align: center;
 }
 
 /* google-map */
