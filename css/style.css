@@ -609,10 +609,6 @@ fieldset{
   margin: 0;
 }
 
-// label {
-//   margin-bottom: 20px;
-// }
-
 .catalog {
   float: right;
   width: 700px;
@@ -621,17 +617,76 @@ fieldset{
 .catalog-item {
   float: left;
   width: 220px;
+  min-height: 286px;
   margin-right: 20px;
   margin-bottom: 20px;
+  box-shadow: 0 0 20px #C7C7C7;
+  background-color: #ffffff;
+}
+
+.catalog-item img {
+  width: 220px;
+  height: 165px;
 }
 
 .catalog-item:nth-child(3n) {
   margin-right: 0;
 }
 
+.catalog-item-title {
+  padding: 15px 20px;
+}
+
+.catalog-item-title a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+}
+
+.catalog-item-category, .catalog-item-name {
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-item-category {
+  text-transform: none;
+}
+
+.catalog .price-block {
+  padding: 0 20px 15px 20px;
+  margin-bottom: 5px;
+  font-size: 0;
+}
+
+.catalog .price-block span {
+  display: inline-block;
+  padding: 10px 28px;
+  background-color: #e5e5e5;
+  color: #000000;
+  font-size: 14px;
+}
+
+.add-to-cart {
+  display: inline-block;
+  padding: 10px 14px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #000000;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.add-to-cart:hover,
+.add-to-cart:active {
+  background-color: #663d15;
+}
+
 .catalog ul {
-  clear: both;
   margin-top: 45px;
+  clear: both;
 }
 
 /* catalog-item.html */
@@ -678,7 +733,7 @@ fieldset{
   margin-bottom: 45px;
 }
 
-.price-block {
+.gallery-item .price-block {
   margin-bottom: 66px;
 }
 
