@@ -614,6 +614,10 @@ fieldset{
   width: 700px;
 }
 
+.wrap-catalog-item {
+  margin-bottom: 45px;
+}
+
 .catalog-item {
   float: left;
   width: 220px;
@@ -684,9 +688,40 @@ fieldset{
   background-color: #663d15;
 }
 
-.catalog ul {
-  margin-top: 45px;
+ul.paginator {
   clear: both;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+ul.paginator li {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 14px;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+ul.paginator a {
+  display: block;
+  padding: 15px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background: #000000;
+}
+
+ul.paginator a:hover {
+  background: #663d15;
+}
+
+ul.paginator li.active span {
+  display: block;
+  padding: 15px 20px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffffff;
 }
 
 /* catalog-item.html */
