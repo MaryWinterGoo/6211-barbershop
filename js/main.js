@@ -47,3 +47,27 @@ var link = document.querySelector(".login");
           }
         }
       });
+
+
+var mapOpen = document.querySelector(".js-open-map");
+
+      var mapPopup = document.querySelector(".popup-map");
+      var mapClose = mapPopup.querySelector(".popup-close");
+
+      mapOpen.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.add("popup-show");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("popup-show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("popup-show")) {
+            mapPopup.classList.remove("popup-show");
+          }
+        }
+      });
