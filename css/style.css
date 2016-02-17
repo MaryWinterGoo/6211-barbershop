@@ -90,7 +90,7 @@ h1 {
   width: 18px;
   height: 18px;
   background: transparent url(../img/sprite.png) no-repeat;
-  background-position: -5px -335px;
+  background-position: -10px -337px;
   opacity: 0.3;
 }
 
@@ -355,27 +355,27 @@ h1 {
 }
 
 .social-btn-vk {
-  background-position: -5px -450px;
+  background-position: -10px -452px;
 }
 
 .social-btn-fb {
-  background-position: -5px -98px;
+  background-position: -10px -50px;
 }
 
 .social-btn-inst {
-  background-position: -5px -204px;
+  background-position: -10px -176px;
 }
 
 .social-btn-vk:hover {
-  background-position: -5px -503px;
+  background-position: -10px -515px;
 }
 
 .social-btn-fb:hover {
-  background-position: -5px -151px;
+  background-position: -10px -113px;
 }
 
 .social-btn-inst:hover {
-  background-position: -5px -257px;
+  background-position: -10px -239px;
 }
 
 .footer-copyright p {
@@ -505,19 +505,95 @@ h1 {
   margin-bottom: 55px;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  margin-bottom: 15px;
+  line-height: 20px;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  background-color: #f9f6f3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -12px -12px;
+}
+
+/**/
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: block;
+  margin-bottom: 15px;
+  line-height: 20px;
+  padding-left: 45px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+  border-radius: 16px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  background-color: #f9f6f3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="radio"]:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/sprite.png) no-repeat;
+  background-position: -12px -414px;
+}
+/**/
+
 legend {
+  padding: 0;
+  margin: 0;
   margin-bottom: 35px;
   display: block;
+  font-size: 24px;
+
 }
 
 fieldset{
   border: 0;
+  padding: 0;
+  margin: 0;
 }
 
-label {
-  display: block;
-  margin-bottom: 16px;
-}
+// label {
+//   margin-bottom: 20px;
+// }
 
 .catalog {
   float: right;
