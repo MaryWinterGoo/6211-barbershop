@@ -397,11 +397,11 @@ h1 {
   background-color: #ffffff;
 }
 
-/* catalog */
+/* other pages */
 a.logo-inner {
   float: left;
   width: 111px;
-  padding: 22px 20px 18px 20px;
+  padding: 22px 20px 16px 20px;
 }
 
 a.logo-inner img {
@@ -409,10 +409,39 @@ a.logo-inner img {
   height: 24px;
 }
 
+.main-navigation .logo-inner:hover {
+  background: none;
+}
+
+.main-navigation .active {
+  position: relative;
+  background-color: none;
+}
+
+.main-navigation .active a:hover {
+  background: none;
+}
+
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+.main-navigation .active span {
+  display: block;
+  padding: 25px 20px;
+}
+
 .breadcrumbs {
   margin-bottom: 60px;
 }
 
+/* catalog */
 .filter {
   float: left;
   width: 220px;
