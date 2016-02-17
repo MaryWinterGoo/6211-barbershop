@@ -13,10 +13,6 @@ h1, h2 {
   font-size: 30px;
 }
 
-h1 {
-  margin-bottom: 30px;
-}
-
 .clearfix::after {
   content: "";
   display: table;
@@ -437,8 +433,65 @@ a.logo-inner img {
   padding: 25px 20px;
 }
 
+.inner-page {
+  color: #000000;
+  background: #f8f3f0 url(../img/bg.jpg) repeat;
+}
+
+.inner-page .main-header {
+  margin-bottom: 55px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
   margin-bottom: 60px;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+
+  display: inline;
+  padding-right: 40px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 18px;
+
+  width: 8px;
+  height: 8px;
+
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+  display: none;
 }
 
 /* catalog */
