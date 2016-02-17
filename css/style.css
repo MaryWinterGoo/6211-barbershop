@@ -657,13 +657,13 @@ fieldset{
   text-transform: none;
 }
 
-.catalog .price-block {
+.price-block {
   padding: 0 20px 15px 20px;
   margin-bottom: 5px;
   font-size: 0;
 }
 
-.catalog .price-block span {
+.price-block span {
   display: inline-block;
   padding: 10px 28px;
   background-color: #e5e5e5;
@@ -732,6 +732,7 @@ ul.paginator li.active span {
 
 .gallery-item-img {
   margin-bottom: 20px;
+    box-shadow: 0 0 20px #C7C7C7;
 }
 
 .gallery-item-img-preview {
@@ -739,6 +740,7 @@ ul.paginator li.active span {
   width: 140px;
   margin-right: 20px;
   height: 149px;
+  box-shadow: 0 0 20px #C7C7C7;
 }
 
 .gallery-item-img-preview:nth-child(3) {
@@ -762,13 +764,20 @@ ul.paginator li.active span {
 
 .description-main-article {
   float: right;
+  color: #aeaeae;
 }
 
-.description p {
+.description p.about-item {
   margin-bottom: 45px;
 }
 
-.gallery-item .price-block {
+.wrap-price-block {
+  display: block;
+}
+
+.wrap-price-block .price-block {
+  padding: 0;
+  margin: 0;
   margin-bottom: 66px;
 }
 
@@ -827,7 +836,7 @@ ul.paginator li.active span {
 
 .custom-list li {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding-left: 20px;
 }
 
